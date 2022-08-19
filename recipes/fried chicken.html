@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>My First Webpage</title>
+    <style>
+      body{ background-image:linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url();
+      background-position: center;
+      background-size:cover;
+      position: relative;}
+      
+      nav{
+          display: flex;
+          padding: 2% 6%;
+          justify-content: space-between;
+          align-items: center;
+      }
+      nav img{
+          width: 10px;
+          height: 10px;
+      }
+      .nav-links{
+          flex: 1;
+          text-align: right;
+      }
+      .nav-links ul li{
+          list-style: none;
+          display: inline-block;
+          padding: 8px 12px;
+          position: relative;
+      }
+      .nav-links ul li a{
+          color: #fff;
+          text-decoration: none;
+          font-size: 13px;
+      }
+      .nav-links ul li::after{
+          content: '';
+          width: 0%;
+          height: 2px;
+          background: navy;
+          display: block;
+          margin: auto;
+          transition: 0.5s;
+      }
+      .nav-links ul li:hover::after{
+          width: 100%;
+      }
+  </style>
+  </head>
+
+  <body>
+    <div class="nav-links">
+      <ul type="none">						
+          <li> <a href="../index.html">home</a></li>	
+          					
+      </ul>
+  </div>
+    <h1>Pap recipe</h1>
+    <img src="../pics/Screenshot from 2022-08-19 11-47-32.png"width="250" height="150" alt="">
+    <h3>Ingredients</h3>
+    <ul>
+        <li>1 litre (4 cups) water</li>
+        <li>salt, to taste</li>
+        <li>240g (2 cups) MAIZE MEAL</li>
+        <li>30ml (2 tablespoons) butter, optional can mix it up with cheese or parmesan (whatever your taste buds fancy)</li>
+    </ul>
+    <h3>Steps</h3>
+    <ol>
+        <li>Bring water to a boil, add salt. </li>
+        <li>Gradually stir in MAIZE MEAL. </li>
+        <li>Cook over low heat, stirring constantly with a wooden spoon for about 20 minutes until cooked through.</li>
+        <li>Mix in butter to taste (optional).</li>
+        <li>Stir well until stiff and cooked through.</li>
+    </ol>
+  </body>
+</html>
